@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./main.css" ref="stylesheet">
+        <script type="module" src="./main.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <table class="table_data">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>type</th>
+                    <th> Amount</th>
+                </tr>
+                </thead>
+                <tbody class="entries">
+                    <tr>
+                        <td><input type="date" class="input input date"></td>
+                        <td><input class="input input description" type="text" placeholder="add a description"></td>
+                        <td><select class ="input input type">
+                            <option value="income">income</option>
+                            <option value="expence" > expence</option>
+                        </select></td>
+                        <td>
+                             <input type="number" class="input input Amount">
+                        </td>
+                        <td>
+                            <button type="button" class="delete-entry"> </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="5" class="control"> <button type="button" class="new entry">new entry</button> </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="summary" >
+                            <strong>Total:</strong>
+                            <span class="total">$0.00</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
